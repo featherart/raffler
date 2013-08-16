@@ -4,7 +4,9 @@ window.Raffler = {  // rails g backbone:install --javascript to generate this ra
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+  	new Raffler.Routers.Entries;
+  	Backbone.history.start();
+    //alert('Hello from Backbone!');
   }
 };
 
